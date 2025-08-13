@@ -1,0 +1,32 @@
+#footer {
+    padding: 0 7%;
+    height: 15vh;
+  }
+  
+  @media (max-width: 576px) {
+
+    #footer {
+      padding: 0 2%;
+    }
+
+  }
+  
+  @media (min-width: 576px) {
+
+    #footer {
+      padding: 0 2%;
+    }
+  
+  }
+  
+  @media (min-width: 768px) {
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+  }
+  
+  @media (min-width: 1200px) {
+    
+  }
