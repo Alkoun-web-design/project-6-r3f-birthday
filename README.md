@@ -1,12 +1,11 @@
-# React + Vite
+# React Three Fiber / Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was originally developed in September 2023 for sending birthday wishes to someone. Its first implementation was filled with oversized .glb files, which resulted in large and untenable loading times.
 
-Currently, two official plugins are available:
+The project was found again in August 2025, and the scene was completely reworked to use minimal resources, including smaller .glb files, and less models.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Overall the change of the scene had to be considered as the initial scene was the inside of a cafe with people inside a birthday celebration taking place. Through the window, another building could be seen across the street. This used up plenty of resources, and the loading times were unwieldly.
 
-## Expanding the ESLint configuration
+The reworked scene takes a top-down view and watches as a table surrounded by chairs is holding the birthday cake, plates, and coffee cups of the guests. The table is surrounded by balloons animated to move around.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Further improvements can and will take place. 
