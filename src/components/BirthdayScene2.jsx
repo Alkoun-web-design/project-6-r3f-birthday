@@ -41,7 +41,7 @@ export default function BirthdayScene() {
               color="#ffe4b3"
             />
             
-            <OrbitControls />
+            {/* <OrbitControls /> */}
             
             <mesh rotation={[Math.PI / 2, 0, 0]}>
               <WoodenFloor2 receiveShadow position={[-2, -2, 0]}/>
