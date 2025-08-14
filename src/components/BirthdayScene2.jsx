@@ -55,7 +55,7 @@ export default function BirthdayScene() {
                 rotation={[-1.5, 2, 0]} 
                 scale={0.17}
               >
-                <meshStandardMaterial color="hotpink" />
+                <meshStandardMaterial color="red" />
               </BalloonsModel>
               
               <BalloonsModel 
@@ -64,7 +64,6 @@ export default function BirthdayScene() {
                 position={[-1, -0.5, -1.055]} 
                 rotation={[-1.5, 4, 0]} 
                 scale={0.17}
-                color="hotpink"
               >
                 <meshStandardMaterial color="#42a5f5" /> {/* Blue balloon */}
               </BalloonsModel>
@@ -84,13 +83,13 @@ export default function BirthdayScene() {
               <Center position={[-0.075, -0.65, -1.1]} rotation={[-3, 0, 0]}>
                 <Text3D letterSpacing={0.0001} size={0.03} font={"/Syncopate_Bold.json"}>
                   HAPPIEST BIRTHDAY
-                  <meshStandardMaterial color="#ffffff" />
+                  <meshStandardMaterial color="#e3242b" />
                 </Text3D>
               </Center>
               <Center position={[-0.075, -0.6, -1.1]} rotation={[-3, 0, 0]}>
                 <Text3D letterSpacing={0.0001} size={0.03} font={"/Syncopate_Bold.json"}>
                   TO YOU!
-                  <meshStandardMaterial color="#ffffff" />
+                  <meshStandardMaterial color="#e3242b" />
                 </Text3D>
               </Center>
 
