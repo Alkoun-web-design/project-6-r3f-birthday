@@ -9,14 +9,16 @@ import { WoodenFloor2 } from './WoodenFloor2';
 import { TablesAndChairs } from './TablesAndChairs'
 import { CoffeeShopCup } from './CoffeeShopCup'
 import { SmartPhone} from './SmartPhone'
-// import { Fork } from './Fork'
+import { Fork } from './Fork'
 
-export default function BirthdayScene() {
+export default function BirthdayScene2() {
     return (
         <div className="space_bg h-screen w-screen">
           <Canvas shadows>
+
+            {/* <OrbitControls /> */}
             
-            <PerspectiveCamera makeDefault position={[0, 10, 0]} fov={12} />
+            <PerspectiveCamera makeDefault position={[0, 6.3, 0]} rotation={[-1.57, 0, 0]} fov={20} />
             
             <Sky sunPosition={[0.1, 0.2, 0.1]} />
             {/* <fog attach="fog" args={['white', 10, 25]} /> */}
@@ -41,10 +43,8 @@ export default function BirthdayScene() {
               color="#ffe4b3"
             />
             
-            {/* <OrbitControls /> */}
-            
             <mesh rotation={[Math.PI / 2, 0, 0]}>
-              <WoodenFloor2 receiveShadow position={[-2, -2, 0]}/>
+              <WoodenFloor2 receiveShadow position={[-2.39, -2, 0]}/>
               
               <TablesAndChairs castShadow receiveShadow position={[-6.7, 2.6, 1]} rotation={[-1.57, 0, 0]} />
               
@@ -72,7 +72,7 @@ export default function BirthdayScene() {
               <FrostedCakeModel castShadow position={[-0.1, -0.1, -1.07]} rotation={[-1.57, 3, 0]} scale={2}/>
               <Plate castShadow receiveShadow position={[-0.1, -0.1, -1.051]} rotation={[-1.55, 0, 0]} scale={0.7}/>
               <Plates castShadow position={[0.1, 0.45, -1.055]} rotation={[-1.55, 1.2, 0]} scale={0.0018}/>
-              {/* <Fork castShadow position={[0.1, 0.45, -1.06]} rotation={[-1.55, 1.2, 0]}/> */}
+              <Fork castShadow position={[0.1, 0.45, -1.06]} rotation={[-1.55, 1.2, 0]}/>
               <CoffeeShopCup castShadow position={[0.2, 0.2, -1.055]} rotation={[-1.55, 1.8, 0]} scale={0.1}/>
               <CoffeeShopCup castShadow position={[0.18, 0.08, -1.055]} rotation={[-1.55, 1.5, 0]} scale={0.1}/>
               <CoffeeShopCup castShadow position={[0.14, -0.5, -1.055]} rotation={[-1.55, 1.2, 0]} scale={0.1}/>
