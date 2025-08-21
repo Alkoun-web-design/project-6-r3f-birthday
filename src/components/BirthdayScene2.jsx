@@ -18,7 +18,7 @@ export default function BirthdayScene2() {
 
             {/* <OrbitControls /> */}
             
-            <PerspectiveCamera makeDefault position={[0, 6.3, 0]} rotation={[-1.57, 0, 0]} fov={20} />
+            <PerspectiveCamera makeDefault position={[-0.1, 6.3, 0]} rotation={[-1.57, 0, 0]} fov={20} />
             
             <Sky sunPosition={[0.1, 0.2, 0.1]} />
             {/* <fog attach="fog" args={['white', 10, 25]} /> */}
