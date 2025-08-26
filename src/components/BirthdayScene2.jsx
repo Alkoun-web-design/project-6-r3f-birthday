@@ -10,15 +10,16 @@ import { TablesAndChairs } from './TablesAndChairs'
 import { CoffeeShopCup } from './CoffeeShopCup'
 import { SmartPhone} from './SmartPhone'
 import { Fork } from './Fork'
+import { BoseSmartSpeaker } from './BoseSmartSpeaker';
 
-export default function BirthdayScene2() {
+export default function BirthdayScene2({musicRef}) {
     return (
         <div className="space_bg h-screen w-screen">
           <Canvas shadows>
 
             {/* <OrbitControls /> */}
             
-            <PerspectiveCamera makeDefault position={[-0.1, 6.3, 0]} rotation={[-1.57, 0, 0]} fov={20} />
+            <PerspectiveCamera makeDefault position={[-0.075, 5.6, -0.05]} rotation={[-1.57, 0, 0]} fov={20} />
             
             <Sky sunPosition={[0.1, 0.2, 0.1]} />
             {/* <fog attach="fog" args={['white', 10, 25]} /> */}
@@ -68,6 +69,7 @@ export default function BirthdayScene2() {
                 <meshStandardMaterial color="#42a5f5" /> {/* Blue balloon */}
               </BalloonsModel>
               
+              <BoseSmartSpeaker musicRef={musicRef} castShadow receiveShadow position={[0.25, -0.4, -1.05]} rotation={[-1.57, 3, 0]}/>
               <SmartPhone castShadow receiveShadow position={[-0.25, -0.3, -0.97]} rotation={[-3.075, 0.77, 1.5]} scale={0.3}/>
               <FrostedCakeModel castShadow position={[-0.1, -0.1, -1.07]} rotation={[-1.57, 3, 0]} scale={2}/>
               <Plate castShadow receiveShadow position={[-0.1, -0.1, -1.051]} rotation={[-1.55, 0, 0]} scale={0.7}/>
