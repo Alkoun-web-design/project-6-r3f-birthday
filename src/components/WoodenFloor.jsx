@@ -9,7 +9,7 @@ Title: Old tile wooden floor texture
 import { useGLTF } from '@react-three/drei'
 
 export function WoodenFloor(props) {
-  const { nodes, materials } = useGLTF('/old_tile_wooden_floor_texture.glb')
+  const { nodes, materials } = useGLTF('/old_tile_wooden_floor_texture_optimized.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -23,4 +23,4 @@ export function WoodenFloor(props) {
   )
 }
 
-useGLTF.preload('/old_tile_wooden_floor_texture.glb')
+useGLTF.preload('/old_tile_wooden_floor_texture_optimized.glb')

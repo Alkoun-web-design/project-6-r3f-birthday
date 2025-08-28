@@ -11,7 +11,7 @@ import { useGLTF } from '@react-three/drei'
 
 export function BoseSmartSpeaker(props) {
 
-  const { nodes, materials } = useGLTF('/bose_smart_speaker.glb')
+  const { nodes, materials } = useGLTF('/bose_smart_speaker_optimized.glb')
   const speakerRef = useRef();
   function playMusic() {
   if (props.musicRef.current) {
@@ -120,5 +120,5 @@ export function BoseSmartSpeaker(props) {
   )
 }
 
-useGLTF.preload('/bose_smart_speaker.glb')
+useGLTF.preload('/bose_smart_speaker_optimized.glb')
 

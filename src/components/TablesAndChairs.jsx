@@ -9,7 +9,7 @@ Title: Tables And Chairs
 import { useGLTF } from '@react-three/drei'
 
 export function TablesAndChairs(props) {
-  const { nodes, materials } = useGLTF('/tables_and_chairs.glb')
+  const { nodes, materials } = useGLTF('/tables_and_chairs_optimized.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -97,5 +97,5 @@ export function TablesAndChairs(props) {
   )
 }
 
-useGLTF.preload('/tables_and_chairs.glb')
+useGLTF.preload('/tables_and_chairs_optimized.glb')
 
