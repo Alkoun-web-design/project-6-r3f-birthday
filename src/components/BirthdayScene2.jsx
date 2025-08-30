@@ -12,7 +12,8 @@ import { SmartPhone} from './SmartPhone'
 import { Fork } from './Fork'
 import { BoseSmartSpeaker } from './BoseSmartSpeaker';
 
-export default function BirthdayScene2({musicRef}) {
+export default function BirthdayScene2({musicRef, name}) {
+
     return (
         <div className="space_bg h-screen w-screen">
           <Canvas shadows>
@@ -85,13 +86,14 @@ export default function BirthdayScene2({musicRef}) {
               <Center position={[-0.075, -0.65, -1.1]} rotation={[-3, 0, 0]}>
                 <Text3D letterSpacing={0.0001} size={0.03} font={"/Syncopate_Bold.json"}>
                   HAPPIEST BIRTHDAY
-                  <meshStandardMaterial color="#e3242b" />
+                  {/* <meshStandardMaterial color="#e3242b" /> */}
+                  <meshStandardMaterial color="white" />
                 </Text3D>
               </Center>
-              <Center position={[-0.075, -0.6, -1.1]} rotation={[-3, 0, 0]}>
+              <Center className='mx-auto' position={[-0.075, -0.6, -1.1]} rotation={[-3, 0, 0]}>
                 <Text3D letterSpacing={0.0001} size={0.03} font={"/Syncopate_Bold.json"}>
-                  TO YOU!
-                  <meshStandardMaterial color="#e3242b" />
+                  TO {name}!
+                  <meshStandardMaterial color="white" />
                 </Text3D>
               </Center>
 
