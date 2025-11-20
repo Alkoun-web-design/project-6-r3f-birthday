@@ -6,13 +6,13 @@ Source: https://sketchfab.com/3d-models/bose-smart-speaker-f06207cbe22e49529d0c5
 Title: Bose Smart Speaker
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function BoseSmartSpeaker(props) {
 
   const { nodes, materials } = useGLTF('/bose_smart_speaker_optimized.glb')
-  const speakerRef = useRef();
+  const speakerRef = React.useRef();
   function playMusic() {
   if (props.musicRef.current) {
     if (!props.musicRef.current.paused) {

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import React from 'react';
 import './App.css';
 // import SolarSystem from './components/SolarSystem.jsx';
 // import Main from './Main'
@@ -8,10 +8,10 @@ import Footer from './components/Footer.jsx';
 
 export default function App() {
 
-  const [name, setName] = useState('YOU')
+  const [name, setName] = React.useState('YOU')
 
-  const inputRef = useRef(null)
-  const musicRef = useRef(null);
+  const inputRef = React.useRef(null)
+  const musicRef = React.useRef(null);
 
   return (
     <div className='text-gray-100'>
