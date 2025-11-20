@@ -1,6 +1,6 @@
-# React Three Fiber / Vite
+# Birthday wishing website on React Three Fiber & Vite
 
-This project was originally developed in September 2023 for sending birthday wishes to someone. Its first implementation was filled with oversized .glb files, which resulted in large and untenable loading times.
+This project was originally developed in September 2023 for sending birthday wishes to someone and is a personal favirite of mine. Its first implementation was filled with oand versized .glb files, which resulted in large and untenable loading times.
 
 The project was found again in August 2025, and the scene was completely reworked to use minimal resources, including smaller .glb files, and less models.
 
