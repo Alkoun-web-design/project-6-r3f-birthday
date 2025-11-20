@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import { Text3D, Center, PerspectiveCamera, Sky, OrbitControls, Loader } from "@react-three/drei";
+import { Text3D, Center, PerspectiveCamera, Sky, OrbitControls, Loader, Html } from "@react-three/drei";
 import { Plate } from './Plate';
 import { Plates } from './Plates';
 import { BalloonsModel } from './BalloonsModel';
@@ -96,7 +96,6 @@ export default function BirthdayScene2({musicRef, name}) {
                   <meshStandardMaterial color="white" />
                 </Text3D>
               </Center>
-
             </mesh>
           </Canvas>
           <Loader />

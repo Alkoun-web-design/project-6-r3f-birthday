@@ -4,6 +4,7 @@ import './App.css';
 // import Main from './Main'
 // import BirthdayScene from './components/BirthdayScene.jsx';
 import BirthdayScene2 from './components/BirthdayScene2.jsx';
+import Footer from './components/Footer.jsx';
 
 export default function App() {
 
@@ -13,17 +14,16 @@ export default function App() {
   const musicRef = useRef(null);
 
   return (
-    <div>
-      <div className='absolute z-20 left-4 '>
-        <input className='mt-4 p-1 bg-[#00000087] w-auto text-gray-100' ref={inputRef} placeholder='Name of the person you want to wish' onChange={() => {inputRef.current.value.length < 12 ? setName(inputRef.current.value) : null}}></input>
+    <div className='text-gray-100'>
+      <div className='absolute z-10 left-4 '>
+        <input className='mt-4 p-1 bg-[#00000087] w-auto' ref={inputRef} placeholder='Wish someone...' onChange={() => {inputRef.current.value.length < 12 ? setName(inputRef.current.value) : null}}></input>
       </div>
       {/* <SolarSystem /> */}
       {/* <BirthdayScene /> */}
       <BirthdayScene2 musicRef={musicRef} name={name}/>
       {/* <audio id="music" className="fixed top-0 left-0 z-20" controls src="/Dido - Thank You.mp3" type="audio/mpeg"></audio>  */}
-      <audio ref={musicRef} className="fixed top-0 left-0 z-20" src="/12. Champagne Supernova.mp3" type="audio/mpeg"></audio> 
-
-      {/* <Main /> */}
+      <audio ref={musicRef} className="fixed top-0 left-0 z-10" src="/12. Champagne Supernova.mp3" type="audio/mpeg"></audio> 
+      <Footer />
     </div>
   );
 }
