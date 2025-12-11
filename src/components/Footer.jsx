@@ -17,7 +17,8 @@ export default function Footer() {
         <footer className="absolute bottom-0 text-xs bg-[#00000087] px-6 py-2 mb-2 mx-2 rounded-full font-[Roboto]">    
             <p className="inline text-wrap">Special thanks to:</p>
             {attributions.map((attribute, key) => (
-                <a key={key} className="" href={attribute.link}> {attribute.name} -</a>
+               key < attributions.length-1 ? <a key={key} className="" href={attribute.link}> {attribute.name},</a>
+               : <a key={key} className="" href={attribute.link}> and {attribute.name}</a>
             ))}
         </footer>
     )
