@@ -8,6 +8,7 @@ import { BalloonsModel } from './BalloonsModel';
 import { StrawberryBirthdayCake } from './StrawberryBirthdayCake';
 // import { CafeModel } from './CafeModel'
 import { FrostedCakeModel } from './FrostedCakeModel';
+import { EffectComposer } from '@react-three/postprocessing'
 
 
 export default function BirthdayScene() {
