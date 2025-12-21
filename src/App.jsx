@@ -28,8 +28,8 @@ export default function App() {
       </div>
       {/* <SolarSystem /> */}
       {/* <BirthdayScene /> */}
-      {/* <BirthdayScene2 musicRef={musicRef} name={name} /> */}
-      <BirthdayScene3 musicRef={musicRef} name={name} />
+      <BirthdayScene2 musicRef={musicRef} name={name} />
+      {/* <BirthdayScene3 musicRef={musicRef} name={name} /> */}
       {/* {scene} */}
       {/* <audio id="music" className="fixed top-0 left-0 z-20" controls src="/Dido - Thank You.mp3" type="audio/mpeg"></audio>  */}
       <audio ref={musicRef} className="fixed top-0 left-0 z-10" src="/12. Champagne Supernova.mp3" type="audio/mpeg"></audio> 
